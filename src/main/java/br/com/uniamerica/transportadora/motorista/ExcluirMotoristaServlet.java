@@ -1,4 +1,4 @@
-package br.com.uniamerica.escola.aluno;
+package br.com.uniamerica.transportadora.motorista;
 
 import java.io.IOException;
 
@@ -7,16 +7,15 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+
 @WebServlet(
-	name = "editarAluno",
-	urlPatterns = "/editarAluno"
-)
-public class EditarAlunoServlet extends HttpServlet {
-	
+		name = "excluirMotorista",
+		urlPatterns = "/excluirMotorista"
+	)
+public class ExcluirMotoristaServlet extends HttpServlet {
+
 	
 	private static final long serialVersionUID = 1L;
-	
-	AlunoDAO alunoDAO = new AlunoDAO();
 	
 	
 	public void doPost(
@@ -24,10 +23,11 @@ public class EditarAlunoServlet extends HttpServlet {
 			HttpServletResponse httpServletResponse
 	) throws IOException {
 		
-		AlunoDAO.index = Integer.valueOf(httpServletRequest.getParameter("index"));
-		AlunoDAO.aluno = alunoDAO.findByIndex(AlunoDAO.index);
+		int index = Integer.valueOf(httpServletRequest.getParameter("index"));
 		
-		httpServletResponse.sendRedirect("editarAluno.jsp");
+		MotoristaDAO motoristaDAO = new MotoristaDAO();
+		motoristaDAO.excluir(index);
+		
+		httpServletResponse.sendRedirect("listarMotorista.jsp");
 	}
-	
 }

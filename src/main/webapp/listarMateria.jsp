@@ -1,7 +1,7 @@
 <%@ page import="br.com.uniamerica.escola.materia.MateriaDAO"%>
 <%@ page import="br.com.uniamerica.escola.materia.Materia"%>
-<%@ page import="br.com.uniamerica.escola.aluno.AlunoDAO"%>
-<%@ page import="br.com.uniamerica.escola.aluno.Aluno"%>
+<%@ page import="br.com.uniamerica.transportadora.motorista.MotoristaDAO"%>
+<%@ page import="br.com.uniamerica.transportadora.motorista.Motorista"%>
 <%@ page import="java.util.ArrayList"%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>

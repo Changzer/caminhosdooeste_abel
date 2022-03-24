@@ -1,5 +1,5 @@
-<%@page import="br.com.uniamerica.escola.aluno.AlunoDAO"%>
-<%@page import="br.com.uniamerica.escola.aluno.Aluno"%>
+<%@page import="br.com.uniamerica.transportadora.motorista.MotoristaDAO"%>
+<%@page import="br.com.uniamerica.transportadora.motorista.Motorista"%>
 <%@page import="java.util.ArrayList"%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
@@ -38,7 +38,9 @@
 						<th>Opcao</th>
 					</tr>
 		
-					<% ArrayList<Aluno> alunos = AlunoDAO.alunos; %>
+					<%
+							ArrayList<Motorista> alunos = MotoristaDAO.motoristas;
+							%>
 					
 					<% for (int i = 0; i < alunos.size(); i++) { %>
 						

@@ -1,27 +1,29 @@
-<%@page import="br.com.uniamerica.escola.aluno.Aluno"%>
-<%@page import="br.com.uniamerica.escola.aluno.AlunoDAO"%>
+<%@page import="br.com.uniamerica.transportadora.motorista.Motorista"%>
+<%@page import="br.com.uniamerica.transportadora.motorista.MotoristaDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Editar Aluno</title>
+		<title>Editar Motorista</title>
 	</head>
 	<body>
 	
 		<div style="height: 100%; justify-content: center; display: flex;">
 		
-			<form action="salvarAluno" method="post" 
+			<form action="salvarMotorista" method="post" 
 					style="width: 300px; 
 						border: 1px solid #009a84;
 						padding: 15px;
 						border-radius: 10px 10px 10px 10px;">
 						
-				<h1 style="text-align: center; color: #009a84;">Editar Aluno</h1>
+				<h1 style="text-align: center; color: #009a84;">Editar Motorista</h1>
 				
 				<hr> <br />
 				
-				<% Aluno aluno = AlunoDAO.aluno; int index = AlunoDAO.index; %>
+				<%
+								Motorista motorista = MotoristaDAO.motorista; int index = MotoristaDAO.index;
+								%>
 				
 				<label style="color: #009a84">ID: </label><br />
 				<input type="text" name="index" value="<%= index %>" style="width: 100%">
@@ -29,13 +31,33 @@
 				<br /> <br />
 			
 				<label style="color: #009a84">Nome: </label><br />
-				<input type="text" name="nome" value="<%= aluno.getNome() %>" style="width: 100%">
+				<input type="text" name="nome" value="<%= motorista.getNome() %>" style="width: 100%">
 				
 				<br /><br />
 				
-				<label style="color: #009a84">Turma: </label> <br />
-				<input type="text" name="turma" value="<%= aluno.getTurma() %>" style="width: 100%">
+				<label style="color: #009a84">cpf: </label> <br />
+				<input type="text" name="cpf" value="<%= motorista.getCpf() %>" style="width: 100%">
+				
+				<br /><br />
+				
+				<label style="color: #009a84">telefone: </label> <br />
+				<input type="text" name="telefone" value="<%= motorista.getTelefone() %>" style="width: 100%">				
 							
+				<br /><br />
+				
+				<label style="color: #009a84">Data de Nascimento: </label> <br />
+				<input type="text" name="dataNascimento" value="<%= motorista.getDataNascimento() %>" style="width: 100%">							
+
+				<br /><br />
+				
+				<label style="color: #009a84">Endereço: </label> <br />
+				<input type="text" name="endereco" value="<%= motorista.getEndereco() %>" style="width: 100%">				
+				
+				<br /><br />
+				
+				<label style="color: #009a84">Obs: </label> <br />
+				<input type="text" name="obs" value="<%= motorista.getObs() %>" style="width: 100%">
+				
 				<br /><br /><br />
 							
 				
@@ -51,7 +73,7 @@
 							    padding: 10px 10px 10px 10px;
 							    text-decoration: auto;
 							    border-radius: 10px 10px 10px 10px;"> 
-							Listar Alunos
+							Listar Motoristas
 						</a>
 						
 					</div>

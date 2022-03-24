@@ -3,19 +3,19 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Cadastrar Aluno</title>
+		<title>Cadastrar Motorista</title>
 	</head>
 	<body>
 	
 		<div style="height: 100%; justify-content: center; display: flex;">
 		
-			<form action="salvarAluno" method="post" 
+			<form action="salvarMotorista" method="post" 
 					style="width: 300px; 
 						border: 1px solid #009a84;
 						padding: 15px;
 						border-radius: 10px 10px 10px 10px;">
 						
-				<h1 style="text-align: center; color: #009a84;">Cadastrar Aluno</h1>
+				<h1 style="text-align: center; color: #009a84;">Cadastrar Motorista</h1>
 				
 				<hr> <br />
 			
@@ -24,9 +24,29 @@
 				
 				<br /><br />
 				
-				<label style="color: #009a84">Turma: </label> <br />
-				<input type="text" name="turma" style="width: 100%">
-							
+				<label style="color: #009a84">Cpf: </label> <br />
+				<input type="text" name="cpf" style="width: 100%">
+				
+				<br /><br />
+								
+				<label style="color: #009a84">Telefone: </label> <br />
+				<input type="text" name="telefone" style="width: 100%">				
+
+				<br /><br />
+								
+				<label style="color: #009a84">Data de Nascimento: </label> <br />
+				<input type="text" name="dataNascimento" style="width: 100%">	
+
+				<br /><br />
+								
+				<label style="color: #009a84">Endereço: </label> <br />
+				<input type="text" name="endereco" style="width: 100%">	
+
+				<br /><br />
+								
+				<label style="color: #009a84">Obs: </label> <br />
+				<input type="text" name="obs" style="width: 100%">	
+																			
 				<br /><br /><br />
 							
 				

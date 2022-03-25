@@ -8,7 +8,7 @@ public class Motorista {
 	private String nome;
 	private String cpf;
 	private String telefone;
-	private LocalDate dataNascimento;
+	private String dataNascimento;
 	private String endereco;
 	private String obs;
 	
@@ -34,7 +34,7 @@ public class Motorista {
 		return telefone;
 	}
 	
-	public LocalDate getDataNascimento() {
+	public String getDataNascimento() {
 		return dataNascimento;
 	}
 	
@@ -62,7 +62,7 @@ public class Motorista {
 		this.telefone = telefone;
 	}
 	
-	public void setDataNascimento(LocalDate dataNascimento) {
+	public void setDataNascimento(String dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 	

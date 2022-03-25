@@ -53,7 +53,7 @@
 				<div style="width: 100%;">
 					<div style="width: 50%; float: left;">
 						
-						<a href="listarAluno.jsp" style="
+						<a href="listarMotorista.jsp" style="
 								background: #009a84;
 							    font-size: 16px;
 							    color: white;
@@ -62,7 +62,7 @@
 							    padding: 10px 10px 10px 10px;
 							    text-decoration: auto;
 							    border-radius: 10px 10px 10px 10px;"> 
-							Listar Alunos
+							Listar Motoristas
 						</a>
 						
 					</div>

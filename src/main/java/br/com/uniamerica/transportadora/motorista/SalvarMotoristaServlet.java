@@ -1,6 +1,7 @@
 package br.com.uniamerica.transportadora.motorista;
 
 import java.io.IOException;
+import java.time.LocalDate;
 
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title> Escola Servlet + JSP </title>
+		<title> Transportadora Servlet + JSP </title>
 	</head>
 	
 	<body>
@@ -13,11 +13,11 @@
 			
 			<div style="width: 500px; ">
 			
-				<h1 style="text-align: center; color: #009a84;">Menu Sistema Escola</h1>
+				<h1 style="text-align: center; color: #009a84;">Menu Sistema Transportadora</h1>
 				
 				<hr>
 				
-				<a href="listarAluno.jsp" style="
+				<a href="listarMotorista.jsp" style="
 						background: #009a84;
 					    width: 500px;
 					    font-size: 24px;
@@ -27,10 +27,10 @@
 					    padding: 10px 0px 10px 0px;
 					    text-decoration: auto;
 					    border-radius: 100px 100px 100px 100px;"> 
-					Listar Alunos
+					Listar Motoristas
 				</a>
 				
-				<a href="listarMateria.jsp" style="
+				<a href="listarCaminhao.jsp" style="
 						margin-top: 60px;
 						background: #009a84;
 					    width: 500px;
@@ -41,7 +41,7 @@
 					    padding: 10px 0px 10px 0px;
 					    text-decoration: auto;
 					    border-radius: 100px 100px 100px 100px;"> 
-					Listar Materias
+					Listar Caminhoes
 				</a>
 			
 			</div>
